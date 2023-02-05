@@ -87,7 +87,7 @@
 }
 .cate_detail {
 	padding: 10px 17px 0 20px;
-	overflow: hidden; 699
+	overflow: hidden;
 }
 .cate_detail dl {
 	display: block;
@@ -162,7 +162,7 @@
 	bottom: 20px;
 	transform: translateX(-50%);
 	border-radius: 10px;
-	padding-left: 0 8px 0 8px;
+	padding: 0 8px 0 8px;
 }
 .circle li {
 	width: 12px;
@@ -451,7 +451,7 @@
 	float: left;
 	margin-top: 50px;
 }
-.countdown-bd li:last-child() {
+.countdown-bd li:last-child {
 	border-right: 0;
 }
 .recomment {
