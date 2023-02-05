@@ -67,6 +67,7 @@ public class Mail_java {
         }catch (Exception e) {
             throw new RuntimeException(e);
 //            System.out.println(e);
+
         }
     }
 }
