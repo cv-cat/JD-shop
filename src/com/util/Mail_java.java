@@ -58,7 +58,7 @@ public class Mail_java {
             prop.put("mail.smtp.ssl.socketFactory", sf);
             Session session = Session.getInstance(prop);
             Transport ts = session.getTransport();
-            ts.connect("smtp.qq.com", "992822653", "eklgfipehsilbedb");
+            ts.connect("smtp.qq.com", "992822653", "???");
             List<Object> list=createSimpleMail(session,email,title,msg);
             Message message =(MimeMessage)list.get(0);
             ts.sendMessage(message, message.getAllRecipients());
