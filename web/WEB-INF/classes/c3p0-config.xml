@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<!-- 如果代码中的config名称不是下面的某一个，就会根据默认配置进行查找，如果也没有默认配置，则按照默认值配置进行查找 -->
+	<default-config>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/secondsql</property>
+		<property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">992822653qq</property>
+		<property name="checkoutTimeout">30000</property>
+		<property name="initialPoolSize">10</property>
+		<property name="maxIdleTime">30</property>
+		<property name="maxPoolSize">100</property>
+		<property name="minPoolSize">10</property>
+	</default-config>
+	<!-- 配置生产环境的数据库 -->
+	<named-config name="mysql_pro">
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/jd?characterEncoding=utf-8</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">992822653qq</property>
+		<property name="checkoutTimeout">30000</property>
+		<property name="initialPoolSize">10</property>
+		<property name="maxIdleTime">30</property>
+		<property name="maxPoolSize">100</property>
+		<property name="minPoolSize">10</property>
+	</named-config>
+	<!-- 配置开发环境的数据库 -->
+	<named-config name="mysql_dev">
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/secondsql</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">992822653qq</property>
+		<property name="checkoutTimeout">30000</property>
+		<property name="initialPoolSize">10</property>
+		<property name="maxIdleTime">30</property>
+		<property name="maxPoolSize">100</property>
+		<property name="minPoolSize">10</property>
+	</named-config>
+</c3p0-config>
